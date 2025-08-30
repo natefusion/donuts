@@ -63,7 +63,7 @@
 
 (defmacro & ((&rest graph-attrs) &body nodes-edges-graphs)
   `(let ((*directed?* t))
-     (make-graph ',graph-attrs ,@nodes-edges-graphs)))
+     (make-graph (list ,@graph-attrs) ,@nodes-edges-graphs)))
 
 (let ((*directed?* t))
   (defun && (&rest nodes-edges-graphs)
@@ -96,6 +96,6 @@
 
 (defmacro [&] ((&rest graph-attrs) &body nodes-edges-graphs)
   `(let ((*directed?* t))
-     (make-cluster ',graph-attrs ,@nodes-edges-graphs)))
+     (make-cluster (list ,@graph-attrs) ,@nodes-edges-graphs)))
 
 ;;====================================================================
