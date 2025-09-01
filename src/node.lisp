@@ -65,6 +65,10 @@
              :attrs (append `(:label ,label)
                             *with-node-context* node-attrs)))
 
+(defun <>2 (name &rest node-attrs)
+  (make-inst 'node :name (format nil "\"~a\"" name)
+                   :attrs (append *with-node-context* node-attrs)))
+
 ;;--------------------------------------
 (defclass record (node)
   ((ports :accessor :ports :initarg :ports :initform nil)))

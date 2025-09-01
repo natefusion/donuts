@@ -32,7 +32,7 @@
 (defpackage :donuts
   (:use :cl)
   (:import-from :in-donuts
-                :<> :[] :rank :~ :@ :with-node
+                :<> :<>2 :[] :rank :~ :@ :with-node
                 :-> :--> :->> :==> :? :with-edge
                 :-- :--- :-< :O
                 :& :[&] :&& :with-graph
@@ -40,7 +40,7 @@
                 :html :br :hr :vr :img
                 :font :i :b :u :sub :sup :table :tr :td
                 )
-  (:export :<> :[] :rank :~ :@ :with-node
+  (:export :<> :<>2 :[] :rank :~ :@ :with-node
            :-> :--> :->> :==> :? :with-edge
            :-- :--- :-< :O
            :& :[&] :&& :with-graph

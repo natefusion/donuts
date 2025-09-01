@@ -31,7 +31,7 @@
 
 (defpackage :in-donuts
   (:use :cl)
-  (:export :<> :[] :rank :~ :@ :with-node
+  (:export :<> :<>2 :[] :rank :~ :@ :with-node
            :-> :--> :->> :==> :? :with-edge
            :-- :--- :-< :O
            :& :[&] :&& :with-graph
